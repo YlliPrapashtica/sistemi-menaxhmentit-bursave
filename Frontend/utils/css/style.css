@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-wrapper {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.sidebar {
+    width: 20%;
+    background: navy;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar a:first-child {
+    margin-top: 80px;
+}
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    margin: 20px 15px;
+}
+.dashboard-body-container {
+    width: 80%;
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header-menu img {
+    width: 80px;
+}
+
+.info-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
+
+.info-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.info-card img {
+    width: 50%;
+}
+
+.vertical-divider {
+    margin: auto;
+    height: 50%;
+    border-left: 1px solid;
+}
+
+.new-student-registrations{
+    width: 100%;
+    text-align: left;
+}
