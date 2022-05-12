@@ -18,12 +18,20 @@ const applicantSchema = new Schema(
       unique: true,
       trim: true,
       lowercase: true,
-      match: [/^[0-9]+$/, "Please provide a valid email"],
+      match: [/^[0-9]+$/, "Please provide a valid personal number"],
+      validate: {
+        validator: async function (value) {
+          const num = await this.constructor
+            .count({ personal_number: value })
+            .exec();
+          return !(num > 0);
+        },
+        message: "Personal number not valid try another one",
+      },
     },
     student_card_number: {
       type: String,
       required: true,
-      unique: true,
       trim: true,
       lowercase: true,
     },

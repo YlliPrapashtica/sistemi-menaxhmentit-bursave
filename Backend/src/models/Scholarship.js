@@ -28,6 +28,11 @@ const scholarshipSchema = new Schema(
       type: Number,
       required: false,
     },
+    publisher: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+      select: false,
+    },
   },
   { timestamps: { createdAt: "created_at" }, collection: "Scholarship" }
 );
