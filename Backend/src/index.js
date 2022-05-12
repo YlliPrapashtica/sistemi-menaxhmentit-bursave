@@ -1,12 +1,16 @@
 const express = require("express");
 require("dotenv").config();
+const passport = require("passport");
+require("./config/passport");
+const indexRouter = require("./routes");
 
 const app = express();
 
-app.get("/", async (req, res) => {
-  res.json({ message: "Hello world" });
-});
+app.use(express.json());
+app.use(passport.initialize());
+app.use("/api/", indexRouter);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server started on port ${process.env.PORT}`);
+const PORT = process.env.PORT;
+app.listen(PORT, () => {
+  console.log(`Server started on ${PORT}`);
 });
