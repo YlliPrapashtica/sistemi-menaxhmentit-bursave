@@ -1,5 +1,6 @@
 const ALLOWED_EMAIL_DOMAINS = [
   "uni-pr.edu",
+  "student.uni-pr.edu",
   "universitetiaab.com",
   "ubt-uni.net",
   "unhz.eu",

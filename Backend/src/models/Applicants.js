@@ -75,20 +75,28 @@ const applicantSchema = new Schema(
     cv: {
       type: String,
       required: true,
+      get: function (value) {
+        return "/media/" + value;
+      },
     },
     extra_documents: {
       type: String,
       required: true,
+      get: function (value) {
+        return "/media/" + value;
+      },
     },
   },
   {
     timestamps: { createdAt: "created_at", updatedAt: "updated_at" },
     collection: "Applicant",
+    toObject: { getters: true },
+    toJSON: { getters: true },
   }
 );
 
-applicantSchema.virtual("fullname").get(() => {
-  return this.first_name + " " + this.last_name;
+applicantSchema.virtual("fullname").get(function () {
+  return `${this.first_name} ${this.last_name}`;
 });
 
 const Applicant = conn.model("Applicant", applicantSchema);

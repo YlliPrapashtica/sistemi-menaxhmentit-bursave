@@ -7,6 +7,7 @@ const indexRouter = require("./routes");
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use(passport.initialize());
 app.use("/api/", indexRouter);
 app.use("/media", express.static("media"));
