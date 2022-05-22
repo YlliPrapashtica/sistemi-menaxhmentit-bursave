@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="768.0" prefWidth="1360.0" stylesheets="@../sample/css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+<BorderPane prefHeight="768.0" prefWidth="1360.0" styleClass="back-light-grey" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
    <left>
       <HBox BorderPane.alignment="CENTER">
          <children>
@@ -31,7 +31,7 @@
                            <graphic>
                               <ImageView fitHeight="37.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../sample/images/user-login-icon-14.png" />
+                                    <Image url="@../images/user-login-icon-14.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -54,7 +54,7 @@
                            <graphic>
                               <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../sample/images/Application-PNG-Clipart.png" />
+                                    <Image url="@../images/Application-PNG-Clipart.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -77,7 +77,7 @@
                            <graphic>
                               <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../sample/images/view-icon-png-19.png" />
+                                    <Image url="@../images/view-icon-png-19.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -100,7 +100,7 @@
                            <graphic>
                               <ImageView fitHeight="52.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../sample/images/talk-bubble-icon-png-27.png" />
+                                    <Image url="@../images/talk-bubble-icon-png-27.png" />
                                  </image>
                               </ImageView>
                            </graphic>
