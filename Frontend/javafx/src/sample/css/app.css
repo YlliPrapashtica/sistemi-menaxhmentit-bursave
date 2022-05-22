@@ -70,3 +70,12 @@
     -fx-background-color: #ffffff;
 }
 
+.back-transparent{
+    -fx-background-color: transparent;
+    -fx-back-radiusL 0px;
+}
+
+.back-light-grey{
+    -fx-background-color: #ececec;
+}
+

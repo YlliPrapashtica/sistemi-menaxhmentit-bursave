@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -24,58 +25,97 @@
                         <Insets />
                      </VBox.margin>
                   </Text>
-                  <VBox alignment="TOP_CENTER" prefWidth="237.0">
+                  <VBox alignment="CENTER_LEFT" prefWidth="237.0" styleClass="back-light-grey">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="196.0" text="My Account">
+                        <Button mnemonicParsing="false" text="My Account" VBox.vgrow="ALWAYS">
                            <graphic>
-                              <FontAwesomeIconView />
+                              <ImageView fitHeight="37.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/user-login-icon-14.png" />
+                                 </image>
+                              </ImageView>
                            </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
                         </Button>
                      </children>
                      <padding>
-                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
                      </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
                   </VBox>
-                  <VBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="back-light-grey">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="196.0" text="Apply for Scholarship">
+                        <Button mnemonicParsing="false" text="Apply for Scholarship">
                            <graphic>
-                              <FontAwesomeIconView />
+                              <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/Application-PNG-Clipart.png" />
+                                 </image>
+                              </ImageView>
                            </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
                         </Button>
                      </children>
                      <padding>
-                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
                      </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
                   </VBox>
-                  <VBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="back-light-grey">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="196.0" text="View All Applicants">
+                        <Button mnemonicParsing="false" text="View All Applicants">
                            <graphic>
-                              <FontAwesomeIconView />
+                              <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/view-icon-png-19.png" />
+                                 </image>
+                              </ImageView>
                            </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
                         </Button>
                      </children>
                      <padding>
-                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
                      </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
                   </VBox>
-                  <VBox>
+                  <VBox alignment="CENTER_LEFT" styleClass="back-light-grey">
                      <children>
-                        <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="196.0" text="Chat Room">
+                        <Button mnemonicParsing="false" text="Chat Room">
                            <graphic>
-                              <FontAwesomeIconView />
+                              <ImageView fitHeight="52.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/talk-bubble-icon-png-27.png" />
+                                 </image>
+                              </ImageView>
                            </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
                         </Button>
                      </children>
                      <padding>
-                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
                      </padding>
-                  </VBox>
-                  <VBox>
-                     <padding>
-                        <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
-                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
                   </VBox>
                </children>
             </VBox>
