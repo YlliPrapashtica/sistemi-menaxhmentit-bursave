@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane prefHeight="768.0" prefWidth="1360.0" styleClass="back-light-grey" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+<BorderPane fx:id="border_pane" prefHeight="768.0" prefWidth="1360.0" styleClass="back-light-grey" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
    <left>
       <HBox BorderPane.alignment="CENTER">
          <children>
@@ -25,7 +25,7 @@
                         <Insets />
                      </VBox.margin>
                   </Text>
-                  <VBox alignment="CENTER_LEFT" prefWidth="237.0" styleClass="back-light-grey">
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_myAccount" prefWidth="237.0" styleClass="back-light-grey">
                      <children>
                         <Button mnemonicParsing="false" text="My Account" VBox.vgrow="ALWAYS">
                            <graphic>
@@ -71,7 +71,7 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </VBox>
-                  <VBox alignment="CENTER_LEFT" styleClass="back-light-grey">
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_ViewAllApplicants" styleClass="back-light-grey">
                      <children>
                         <Button mnemonicParsing="false" text="View All Applicants">
                            <graphic>

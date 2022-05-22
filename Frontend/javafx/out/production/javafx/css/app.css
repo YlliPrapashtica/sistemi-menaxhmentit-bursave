@@ -72,12 +72,40 @@
 
 .back-transparent{
     -fx-background-color: transparent;
-    -fx-back-radiusL 0px;
+    -fx-back-radius: 0px;
 }
 
 .back-light-grey{
     -fx-background-color: #ececec;
 }
 
+.back-light-yellow{
+    -fx-background-color: #ffffb3;
+}
 
+/*Shapes*/
+
+.flat{
+    -fx-background-radius: 0px;
+}
+
+/*Borders*/
+
+.border-2px{
+    -fx-border-width: 2px;
+}
+
+.border-light-grey {
+    -fx-border-color: #ececec;
+}
+
+.border-light-yellow{
+    -fx-border-color: #ffffb3;
+}
+
+/*Hovers*/
+
+.hover-hand{
+    -fx-cursor: hand;
+}
 
