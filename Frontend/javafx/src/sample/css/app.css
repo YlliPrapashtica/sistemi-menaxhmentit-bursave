@@ -44,3 +44,29 @@
 
 /*text colors*/
 
+.fill-light-grey{
+    -fx-fill: #ececec;
+    -fx-text: #ececec;
+}
+
+.fill-grey{
+    -fx-fill: #9c9c9c;
+    -fx-text: #9c9c9c;
+}
+
+.fill-dark{
+    -fx-fill: #4f5d55;
+    -fx-text: #4f5d55;
+}
+
+.fill-white{
+    -fx-fill: #ffffff;
+    -fx-text: #ffffff;
+}
+
+/*background-colors*/
+
+.back-white{
+    -fx-background-color: #ffffff;
+}
+
