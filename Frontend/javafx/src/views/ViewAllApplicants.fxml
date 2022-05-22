@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewAllController">
+<VBox prefHeight="400.0" prefWidth="600.0" styleClass="fn-18" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewAllController">
    <children>
-      <VBox prefHeight="400.0" prefWidth="600.0">
+      <HBox alignment="TOP_CENTER" prefHeight="29.0" prefWidth="600.0">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Applicants List" wrappingWidth="599.459716796875" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="back-white" text="Applicants List" textAlignment="CENTER" wrappingWidth="599.459716796875" HBox.hgrow="ALWAYS" />
          </children>
-      </VBox>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-login-icon-14.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 1" wrappingWidth="121.20508193969727" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-login-icon-14.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 2" wrappingWidth="121.20508193969727" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-login-icon-14.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 3" wrappingWidth="121.20508193969727" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-login-icon-14.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 4" wrappingWidth="121.20508193969727" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-login-icon-14.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 5" wrappingWidth="121.20508193969727" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="45.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-login-icon-14.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 6" wrappingWidth="121.20508193969727" />
+         </children>
+      </HBox>
    </children>
-</AnchorPane>
+</VBox>
