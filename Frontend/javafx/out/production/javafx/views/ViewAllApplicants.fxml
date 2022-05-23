@@ -4,129 +4,134 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
 
-<VBox prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewAllController">
-   <children>
-      <HBox alignment="TOP_CENTER" prefHeight="29.0" prefWidth="600.0" styleClass="back-light-yellow">
+<BorderPane fx:id="border_pane1" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ViewAllController">
+   <center>
+      <VBox prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/app.css">
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fn-32" text="Applicants List" textAlignment="CENTER" wrappingWidth="355.459716796875" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="600.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="fn-32" text="Applicants List" textAlignment="CENTER" wrappingWidth="355.459716796875" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT" onMouseClicked="#show_applicantInfo">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-login-icon-14.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 1" wrappingWidth="121.20508193969727" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="border-2px" />
+                  <String fx:value="border-light-grey" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-login-icon-14.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 2" wrappingWidth="121.20508193969727" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="border-2px" />
+                  <String fx:value="border-light-grey" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-login-icon-14.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 3" wrappingWidth="121.20508193969727" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="border-2px" />
+                  <String fx:value="border-light-grey" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-login-icon-14.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 4" wrappingWidth="121.20508193969727" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="border-2px" />
+                  <String fx:value="border-light-grey" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-login-icon-14.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 5" wrappingWidth="121.20508193969727" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="border-2px" />
+                  <String fx:value="border-light-grey" />
+               </styleClass>
+            </HBox>
+            <HBox alignment="BOTTOM_LEFT">
+               <children>
+                  <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/user-login-icon-14.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 6" wrappingWidth="121.20508193969727" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="border-2px" />
+                  <String fx:value="border-light-grey" />
+               </styleClass>
+            </HBox>
          </children>
-      </HBox>
-      <HBox alignment="BOTTOM_LEFT">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/user-login-icon-14.png" />
-               </image>
-            </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 1" wrappingWidth="121.20508193969727" />
-         </children>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
          <styleClass>
-            <String fx:value="hover-hand" />
-            <String fx:value="border-2px" />
-            <String fx:value="border-light-yellow" />
+            <String fx:value="fn-18" />
+            <String fx:value="back-white" />
          </styleClass>
-      </HBox>
-      <HBox alignment="BOTTOM_LEFT">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/user-login-icon-14.png" />
-               </image>
-            </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 2" wrappingWidth="121.20508193969727" />
-         </children>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-         <styleClass>
-            <String fx:value="hover-hand" />
-            <String fx:value="border-2px" />
-            <String fx:value="border-light-yellow" />
-         </styleClass>
-      </HBox>
-      <HBox alignment="BOTTOM_LEFT">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/user-login-icon-14.png" />
-               </image>
-            </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 3" wrappingWidth="121.20508193969727" />
-         </children>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-         <styleClass>
-            <String fx:value="hover-hand" />
-            <String fx:value="border-2px" />
-            <String fx:value="border-light-yellow" />
-         </styleClass>
-      </HBox>
-      <HBox alignment="BOTTOM_LEFT">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/user-login-icon-14.png" />
-               </image>
-            </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 4" wrappingWidth="121.20508193969727" />
-         </children>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-         <styleClass>
-            <String fx:value="hover-hand" />
-            <String fx:value="border-2px" />
-            <String fx:value="border-light-yellow" />
-         </styleClass>
-      </HBox>
-      <HBox alignment="BOTTOM_LEFT">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/user-login-icon-14.png" />
-               </image>
-            </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 5" wrappingWidth="121.20508193969727" />
-         </children>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-         <styleClass>
-            <String fx:value="hover-hand" />
-            <String fx:value="border-2px" />
-            <String fx:value="border-light-yellow" />
-         </styleClass>
-      </HBox>
-      <HBox alignment="BOTTOM_LEFT">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/user-login-icon-14.png" />
-               </image>
-            </ImageView>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Person 6" wrappingWidth="121.20508193969727" />
-         </children>
-         <padding>
-            <Insets left="10.0" />
-         </padding>
-         <styleClass>
-            <String fx:value="hover-hand" />
-            <String fx:value="border-2px" />
-            <String fx:value="border-light-yellow" />
-         </styleClass>
-      </HBox>
-   </children>
-   <styleClass>
-      <String fx:value="fn-18" />
-      <String fx:value="back-white" />
-   </styleClass>
-</VBox>
+      </VBox>
+   </center>
+</BorderPane>

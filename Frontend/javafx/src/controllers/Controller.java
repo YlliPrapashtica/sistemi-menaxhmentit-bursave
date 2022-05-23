@@ -5,7 +5,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -32,8 +31,11 @@ public class Controller implements Initializable {
         border_pane.setCenter(myAccount);
     }
 
-    public void show_applyform(MouseEvent mouseEvent) throws IOException {
+    public void show_applyform(MouseEvent mouseEvent2) throws IOException {
         Parent Apply = FXMLLoader.load(getClass().getResource("/views/Apply.fxml"));
         border_pane.setCenter(Apply);
     }
+
+
+
 }
