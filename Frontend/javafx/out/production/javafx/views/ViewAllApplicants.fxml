@@ -37,7 +37,7 @@
                   <String fx:value="border-light-grey" />
                </styleClass>
             </HBox>
-            <HBox alignment="BOTTOM_LEFT">
+            <HBox alignment="BOTTOM_LEFT" onMouseClicked="#show_applicantInfo">
                <children>
                   <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -55,7 +55,7 @@
                   <String fx:value="border-light-grey" />
                </styleClass>
             </HBox>
-            <HBox alignment="BOTTOM_LEFT">
+            <HBox alignment="BOTTOM_LEFT" onMouseClicked="#show_applicantInfo">
                <children>
                   <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -73,7 +73,7 @@
                   <String fx:value="border-light-grey" />
                </styleClass>
             </HBox>
-            <HBox alignment="BOTTOM_LEFT">
+            <HBox alignment="BOTTOM_LEFT" onMouseClicked="#show_applicantInfo">
                <children>
                   <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -91,7 +91,7 @@
                   <String fx:value="border-light-grey" />
                </styleClass>
             </HBox>
-            <HBox alignment="BOTTOM_LEFT">
+            <HBox alignment="BOTTOM_LEFT" onMouseClicked="#show_applicantInfo">
                <children>
                   <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -109,7 +109,7 @@
                   <String fx:value="border-light-grey" />
                </styleClass>
             </HBox>
-            <HBox alignment="BOTTOM_LEFT">
+            <HBox alignment="BOTTOM_LEFT" onMouseClicked="#show_applicantInfo">
                <children>
                   <ImageView fitHeight="39.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
                      <image>
