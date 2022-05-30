@@ -27,7 +27,7 @@
                   </Text>
                   <VBox alignment="CENTER_LEFT" onMouseClicked="#show_myAccount" prefWidth="237.0">
                      <children>
-                        <Button mnemonicParsing="false" text="My Account" VBox.vgrow="ALWAYS">
+                        <Button mnemonicParsing="false" onMouseClicked="#show_myAccount" text="My Account" VBox.vgrow="ALWAYS">
                            <graphic>
                               <ImageView fitHeight="37.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -54,7 +54,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" onMouseClicked="#show_applyform">
                      <children>
-                        <Button mnemonicParsing="false" text="Apply for Scholarship">
+                        <Button mnemonicParsing="false" onMouseClicked="#show_applyform" text="Apply for Scholarship">
                            <graphic>
                               <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -81,7 +81,7 @@
                   </VBox>
                   <VBox alignment="CENTER_LEFT" onMouseClicked="#show_ViewAllApplicants">
                      <children>
-                        <Button mnemonicParsing="false" text="View All Applicants">
+                        <Button mnemonicParsing="false" onMouseClicked="#show_ViewAllApplicants" text="View All Applicants">
                            <graphic>
                               <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -106,9 +106,9 @@
                         <String fx:value="hover-hand" />
                      </styleClass>
                   </VBox>
-                  <VBox alignment="CENTER_LEFT">
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_chat">
                      <children>
-                        <Button mnemonicParsing="false" text="Chat Room">
+                        <Button mnemonicParsing="false" onMouseClicked="#show_chat" text="Chat Room">
                            <graphic>
                               <ImageView fitHeight="52.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
@@ -133,6 +133,33 @@
                         <String fx:value="hover-hand" />
                      </styleClass>
                   </VBox>
+                  <VBox alignment="CENTER_LEFT">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#show_chat" text="GroupChat">
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/group-chat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <styleClass>
+                        <String fx:value="back-light-grey" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                     <padding>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </VBox>
                </children>
             </VBox>
          </children>
@@ -141,6 +168,6 @@
          </BorderPane.margin></HBox>
    </left>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" styleClass="back-white" BorderPane.alignment="CENTER" />
+      <VBox onMouseClicked="#show_chat" prefHeight="200.0" prefWidth="100.0" styleClass="back-white" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

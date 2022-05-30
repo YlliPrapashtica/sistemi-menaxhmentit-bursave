@@ -1,64 +1,21 @@
 package client;
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import java.awt.GridLayout;
-import java.awt.Insets;
-import java.awt.ScrollPane;
-import java.awt.SystemColor;
-import java.awt.Toolkit;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.AdjustmentEvent;
-import java.awt.event.AdjustmentListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.net.Socket;
-import java.net.UnknownHostException;
-import java.util.ArrayList;
-import java.util.Vector;
 
-import javax.management.ValueExp;
-import javax.swing.BorderFactory;
-import javax.swing.BoxLayout;
-import javax.swing.DefaultListModel;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JCheckBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.SwingConstants;
-import javax.swing.border.AbstractBorder;
+import user.User;
+import user.UserRenderer;
+import video.VideoCall;
+
+import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.LineBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
-
-import Config.Config;
-import User.User;
-import video.VideoCall;
-import Voice.Caller;
-import User.UserRenderer;
-
-import javax.swing.JTextField;
-import javax.swing.ScrollPaneConstants;
-import java.awt.Component;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.io.*;
+import java.net.Socket;
 
 public class Client {
 
@@ -413,17 +370,17 @@ public class Client {
 		pnControlChild.add(btnVoiceCall);
 		btnVoiceCall.addActionListener(new ActionListener() {
 
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(java.awt.event.ActionEvent e) {
 				try {
 					if (yourAccount != null) {
 						
-						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + Config.tokenVoiceCall);
-						Caller caller = new Caller(yourAccount.getName(), yourAccount.getMyIP());
+						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + config.Config.tokenVoiceCall);
+						voice.Caller caller = new voice.Caller(yourAccount.getName(), yourAccount.getMyIP());
 						caller.setVisibleFrameCall(true);
 						caller.startRecoderAudio(true);
 						caller.startPlayerAudio(true);
 					}
-				} catch (IOException e1) {
+				} catch (java.io.IOException e1) {
 					// e1.printStackTrace();
 				}
 			}
@@ -443,7 +400,7 @@ public class Client {
 					videoCall.startRecorderVideo();
 					videoCall.startPlayerVideo();
 					try {
-						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + Config.tokenVideoCall);
+						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + config.Config.tokenVideoCall);
 					} catch (IOException e1) {
 
 					}
@@ -483,13 +440,13 @@ public class Client {
 	private class MessageThread extends Thread {
 		public void run() {
 			try {
-				socket = new Socket(SERVER_IP, Config.portTCPMessage);
-				din = new DataInputStream(socket.getInputStream());
-				dout = new DataOutputStream(socket.getOutputStream());
+				socket = new java.net.Socket(SERVER_IP, config.Config.portTCPMessage);
+				din = new java.io.DataInputStream(socket.getInputStream());
+				dout = new java.io.DataOutputStream(socket.getOutputStream());
 
-				pnDisplay = new JPanel();
-				pnDisplay.setLayout(new BoxLayout(pnDisplay, BoxLayout.Y_AXIS));
-				pnDisplay.setBackground(Color.white);
+				pnDisplay = new javax.swing.JPanel();
+				pnDisplay.setLayout(new javax.swing.BoxLayout(pnDisplay, javax.swing.BoxLayout.Y_AXIS));
+				pnDisplay.setBackground(java.awt.Color.white);
 				scrollPaneDisplay.setViewportView(pnDisplay);
 
 				while (true) {
@@ -500,23 +457,23 @@ public class Client {
 						String receiverName = arr[1];
 						String message = arr[2];
 
-						if (message.equals(Config.tokenVoiceCall)) {
+						if (message.equals(config.Config.tokenVoiceCall)) {
 							for (int i = 0; i < listModelUser.size(); i++) {
-								User user = listModelUser.get(i);
+								user.User user = listModelUser.get(i);
 								if (user.getName().equals(senderName)
 										&& senderName.equals(myAccount.getName()) == false) {
-									Caller caller = new Caller(user.getName(), user.getMyIP());
+									voice.Caller caller = new voice.Caller(user.getName(), user.getMyIP());
 									caller.setVisibleFrameCall(true);
 									caller.startPlayRingtone(true);
 								}
 							}
 
-						} else if (message.equals(Config.tokenVideoCall)) {
+						} else if (message.equals(config.Config.tokenVideoCall)) {
 							for (int i = 0; i < listModelUser.size(); i++) {
-								User user = listModelUser.get(i);
+								user.User user = listModelUser.get(i);
 								if (user.getName().equals(senderName)
 										&& senderName.equals(myAccount.getName()) == false) {
-									VideoCall videoCall = new VideoCall(user.getName(), user.getMyIP());
+									video.VideoCall videoCall = new video.VideoCall(user.getName(), user.getMyIP());
 									videoCall.playRingtone(true);
 								}
 							}
@@ -527,7 +484,7 @@ public class Client {
 								setMessageInPanel(senderName, message);
 							}
 						}
-					} catch (IOException io) {
+					} catch (java.io.IOException io) {
 						// throw io;
 					}
 					if (!activityState) {
@@ -537,9 +494,9 @@ public class Client {
 				din.close();
 				dout.close();
 				socket.close();
-			} catch (UnknownHostException ee) {
+			} catch (java.net.UnknownHostException ee) {
 				System.out.println("No Host");
-			} catch (IOException e) {
+			} catch (java.io.IOException e) {
 				System.out.println(e.getMessage());
 			}
 		}
@@ -581,7 +538,7 @@ public class Client {
 
 		public ObjectThead() {
 			try {
-				this.socket = new Socket(SERVER_IP, Config.portTCPObject);
+				this.socket = new Socket(SERVER_IP, config.Config.portTCPObject);
 			} catch (IOException e) {
 				System.out.println("Object doesn't init successfully");
 			}

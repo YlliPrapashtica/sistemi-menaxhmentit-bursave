@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="border_pane" prefHeight="768.0" prefWidth="1360.0" styleClass="back-light-grey" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Controller">
+   <left>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="back-white">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sistemi i Bursave" wrappingWidth="236.0">
+                     <styleClass>
+                        <String fx:value="fn-32" />
+                        <String fx:value="txt-center" />
+                     </styleClass>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_myAccount" prefWidth="237.0">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#show_myAccount" text="My Account" VBox.vgrow="ALWAYS">
+                           <graphic>
+                              <ImageView fitHeight="37.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/user-login-icon-14.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="back-light-grey" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_applyform">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#show_applyform" text="Apply for Scholarship">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/Application-PNG-Clipart.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="back-light-grey" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_ViewAllApplicants">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#show_ViewAllApplicants" text="View All Applicants">
+                           <graphic>
+                              <ImageView fitHeight="48.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/view-icon-png-19.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="back-light-grey" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" onMouseClicked="#show_chat">
+                     <children>
+                        <Button mnemonicParsing="false" onMouseClicked="#show_chat" text="Chat Room">
+                           <graphic>
+                              <ImageView fitHeight="52.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/talk-bubble-icon-png-27.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <styleClass>
+                              <String fx:value="back-transparent" />
+                              <String fx:value="fn-18" />
+                           </styleClass>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="back-light-grey" />
+                        <String fx:value="hover-hand" />
+                     </styleClass>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin></HBox>
+   </left>
+   <center>
+      <VBox onMouseClicked="#show_chat" prefHeight="200.0" prefWidth="100.0" styleClass="back-white" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

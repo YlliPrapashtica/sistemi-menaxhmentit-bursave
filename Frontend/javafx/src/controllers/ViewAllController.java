@@ -74,4 +74,8 @@ public class ViewAllController  {
 	        }
 	    }
 
+    public void show_applicantInfo(MouseEvent event) throws IOException {
+        Parent applicantInfo = FXMLLoader.load(java.util.Objects.requireNonNull(getClass().getResource("/views/applicantInfo.fxml")));
+        border_pane1.setCenter(applicantInfo);
+    }
 }

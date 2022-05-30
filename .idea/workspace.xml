@@ -2,8 +2,133 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb3c2b00-baf4-405b-83f3-7663d8bcc3e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javacpp_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/opencv_3_4_1_1_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sistemi-menaxhmentit-bursave.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12767b2697da26111ec5db4f89acf962e2f537e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/9/19d732b690d86d756bc7f9a199b20aec5629ce57" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/27ca9fab40cd0c96c3c022253466381a0de2c50c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/322fa53457a7763973dc091ffa1a936c9a701860" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36e281e51340110ac43a6f46e8d59a937df98379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/9736bbb5bcc0ca50b6cdf2e70e9dc3e27a1ad4e6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/adeb5529a2c145ec7c12631c95e696d644385295" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/edda8b585debdd8c03197526c077814a0cd10db3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/Frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/javafx/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/javafx/src/images/group-chat.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Frontend/javafx/src/views/chat.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/chat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/user/UserRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/voice/Caller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/voice/PlayRingtone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/voice/PlayerAudio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat/src/voice/RecorderAudio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/controllers/ChatController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/controllers/Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/controllers/MyAccountController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/controllers/ViewAllController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/helpers/DynamicViews.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/images/Application-PNG-Clipart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/images/talk-bubble-icon-png-27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/images/user-login-icon-14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/images/view-icon-png-19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/javaFiles/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/Apply.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/ViewAllApplicants.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/app.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/applicantInfo.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/chat.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/myAccount.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Frontend/views/sample.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/audio/nhac2.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$MessageThread.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client$ObjectThead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Client.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Login$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/client/Login.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/config/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/-abstract-user-icon-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/Chat-PNG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/call.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/calldeny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/callphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/camera1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/clipart593746.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/iconVideo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/iconattach1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/iconchat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/server.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/serverii.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/setting2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/sticker/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/image/video1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/server/Server$InitSocketTCPMessage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/server/Server$InitSocketTCPObject.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/server/Server$MessageThreadServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/server/Server$ObjectThead.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/server/Server.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/user/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/user/UserRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/video/VideoCall$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/video/VideoCall$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/video/VideoCall$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/video/VideoCall$PlayerVideo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/video/VideoCall$RecorderVideo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/video/VideoCall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/Caller$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/Caller$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/Caller$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/Caller$RunTimeCall.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/Caller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/PlayRingtone.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/PlayerAudio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/chat/voice/RecorderAudio.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/http.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/http.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/http2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/http2.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/inspector.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/inspector.d.ts" afterDir="false" />
@@ -19,17 +144,17 @@
       <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/controllers/MyAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/MyAccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/controllers/ViewAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/ViewAllController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/javaFiles/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/models/ApplicantModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/javaFiles/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/javaFiles/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/models/ApplicantModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/models/ApplicantModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/views/Apply.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/views/Apply.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/views/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/views/app.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/Config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/config/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/User/UserRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/user/UserRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/Voice/Caller.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/Caller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/Voice/PlayRingtone.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/PlayRingtone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/Voice/PlayerAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/PlayerAudio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/src/Voice/RecorderAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/RecorderAudio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/Config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/User/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/User/UserRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/User/UserRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/Caller.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/Voice/Caller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/PlayRingtone.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/Voice/PlayRingtone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/PlayerAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/Voice/PlayerAudio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/RecorderAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/Voice/RecorderAudio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/src/client/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/client/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/server/Server.java" afterDir="false" />

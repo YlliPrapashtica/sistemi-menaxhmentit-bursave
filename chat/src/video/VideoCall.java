@@ -1,42 +1,29 @@
 package video;
 
-import java.awt.Image;
-
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
+import voice.PlayRingtone;
+import voice.PlayerAudio;
+import voice.RecorderAudio;
 
-import Config.Config;
-import Voice.PlayRingtone;
-import Voice.PlayerAudio;
-import Voice.RecorderAudio;
-
-import java.awt.Color;
-import javax.swing.JButton;
 import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import java.awt.Toolkit;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferByte;
 import java.awt.image.WritableRaster;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.SocketException;
 
@@ -65,7 +52,7 @@ public class VideoCall extends JFrame {
 
 		public PlayerVideo() {
 			try {
-				din = new DatagramSocket(Config.portUDPVideo);
+				din = new DatagramSocket(config.Config.portUDPVideo);
 			} catch (SocketException e) {
 			}
 		}
@@ -91,10 +78,10 @@ public class VideoCall extends JFrame {
 			din.close();
 		}
 
-		@Override
+		/*@Override
 		public void finalize() {
 			din.close();
-		}
+		}*/
 	}
 
 	public class RecorderVideo extends Thread {
@@ -132,7 +119,7 @@ public class VideoCall extends JFrame {
 							byte[] byte_arr = baos.toByteArray();
 
 							DatagramPacket data = new DatagramPacket(byte_arr, byte_arr.length,
-									InetAddress.getByName(yourIP), Config.portUDPVideo);
+									InetAddress.getByName(yourIP), config.Config.portUDPVideo);
 							// System.out.println("Send V#" + i++);
 							dout.send(data);
 						}
@@ -219,7 +206,7 @@ public class VideoCall extends JFrame {
 	public void startPlayerVideo() {
 		playerVideo = new PlayerVideo();
 		playerVideo.start();
-		playerAudio = new PlayerAudio(Config.portUDPAudio);
+		playerAudio = new PlayerAudio(config.Config.portUDPAudio);
 		playerAudio.start();
 
 		btnCall.setVisible(false);
@@ -229,23 +216,23 @@ public class VideoCall extends JFrame {
 	public void startRecorderVideo() {
 		recorderVideo = new RecorderVideo();
 		recorderVideo.start();
-		recorderAudio = new RecorderAudio(yourIP, Config.portUDPAudio);
+		recorderAudio = new RecorderAudio(yourIP, config.Config.portUDPAudio);
 		recorderAudio.start();
 	}
 
 	public void releaseMemory() {
 		try {
-			recorderVideo.stop();
+			//recorderVideo.stop();
 			camera.release();
 
 			recorderAudio.closeSocket();
 			playerAudio.closeSocket();
 
-			recorderAudio.stop();
-			playerAudio.stop();
+			//recorderAudio.stop();
+			//playerAudio.stop();
 
 			playerVideo.closeSocket();
-			playerVideo.stop();
+			//playerVideo.stop();
 		} catch (Exception e) {
 			System.out.println("memory exception");
 		} finally {
@@ -282,7 +269,7 @@ public class VideoCall extends JFrame {
 			try {
 				if (!playRingtone.isInterrupted() || playRingtone.isAlive()) {
 					playRingtone.interrupt();
-					playRingtone.stop();
+					//playRingtone.stop();
 				}
 			} catch (Exception e) {
 
