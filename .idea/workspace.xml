@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb3c2b00-baf4-405b-83f3-7663d8bcc3e1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Frontend/javafx/src/views/chat.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/http.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/http.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/http2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/http2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/inspector.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/inspector.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/perf_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/perf_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/repl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/repl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/@types/node/trace_events.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/@types/node/trace_events.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/component-emitter/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/component-emitter/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/got/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/got/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/make-dir/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/make-dir/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/nodemon/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/nodemon/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/update-notifier/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/update-notifier/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/node_modules/vary/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/node_modules/vary/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/controllers/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/controllers/MyAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/MyAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/controllers/ViewAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/controllers/ViewAllController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/javaFiles/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/models/ApplicantModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/views/Apply.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/views/Apply.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/javafx/src/views/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/javafx/src/views/app.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/User/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/User/UserRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/user/UserRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/Caller.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/Caller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/PlayRingtone.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/PlayRingtone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/PlayerAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/PlayerAudio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/Voice/RecorderAudio.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/voice/RecorderAudio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/client/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/client/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/src/video/VideoCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat/src/video/VideoCall.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="29qmJMNpWssPrVYFxvrdXAlVdFf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/Frontend/javafx/src/javaFiles" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jar_files/opencv-3.4.1-1.4.1.jar" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="javaFiles" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="javaFiles.Main" />
+      <module name="Frontend" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-18.0.1\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="login" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="client.Login" />
+      <module name="chat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="login2" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="client.Login" />
+      <module name="chat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="server.Server" />
+      <module name="chat" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.login" />
+      <item itemvalue="Application.login2" />
+      <item itemvalue="Application.server" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb3c2b00-baf4-405b-83f3-7663d8bcc3e1" name="Default Changelist" comment="" />
+      <created>1653848919799</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653848919799</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
