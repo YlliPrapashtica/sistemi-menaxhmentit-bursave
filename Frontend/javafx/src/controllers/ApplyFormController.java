@@ -34,8 +34,6 @@ public class ApplyFormController implements Initializable {
 
     @FXML
     private VBox border_pane;
-
-
 	@FXML
     private  TextField firstNameValue;
 	@FXML
@@ -59,7 +57,7 @@ public class ApplyFormController implements Initializable {
 	@FXML
     private VBox content;
     
-    File extraDocument, cv;
+    File extraDocument= new File(""), cv = new File("");
 
     private Desktop desktop = Desktop.getDesktop();
     
@@ -69,8 +67,8 @@ public class ApplyFormController implements Initializable {
     	FileChooser fileChooser = new FileChooser();
     	Stage  window = new Stage();
     	
-    	submit.setDisable(!checkFields());
-    	
+
+    	checkFields();    	
     	cvValue.setOnAction(
             (EventHandler<ActionEvent>) new EventHandler<ActionEvent>() {
                 @Override
@@ -109,76 +107,56 @@ public class ApplyFormController implements Initializable {
     	
     	firstNameValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
-                    	checkFields();
-                    }
+
+            	checkFields();
                 }
             });
     	lastNameValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
-                    	checkFields();
-                    }
+
+            	checkFields();
                 }
             });
     	
     	personalNumberValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
-                    	checkFields();
-                    }
+                  checkFields();
+                    
                 }
             });
     	
     	studentCardNumberValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
-                    	checkFields();
-                    }
+
+            	checkFields();
                 }
             });  
     	
     	
     	emailValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
-                    	checkFields();
-                    }
+
+            	checkFields();
                 }
             });   
     	
     	
     	phoneValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
+                   
                     	checkFields();
-                    }
+                    
                 }
             });  
     	
     	
-    	firstNameValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
+    	facultyValue.focusedProperty().addListener((arg0, oldValue, newValue) -> {
             if (!newValue) { // when focus lost
-                    if (firstNameValue.getText().toString().length() > 0) { 
                     	checkFields();
-                    }
+                    
                 }
             });
     	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	if(checkFields()) {
-    		
-    	}
 
     }
     
@@ -217,46 +195,19 @@ public class ApplyFormController implements Initializable {
         }
     }
     
-    
+@FXML
 public boolean checkFields() {
+boolean canSubmit = false;
 	
 	if(firstNameValue.getText().toString().length() > 0 && 
 			lastNameValue.getText().toString().length() > 0 && 			personalNumberValue.getText().toString().length() > 0 && 			studentCardNumberValue.getText().toString().length() > 0 &&
 			emailValue.getText().toString().length() > 0 &&
 			phoneValue.getText().toString().length() > 0 && 
 			facultyValue.getText().toString().length() > 0 &&
-			cv.getPath().length() > 0 && extraDocument.getPath().length() > 0 ) return true;
-	
+			cv.getPath().length() > 5 && extraDocument.getPath().length() > 5 ) canSubmit = true;
 
-	System.out.println(firstNameValue.getText().toString().length() > 0 && 
-			lastNameValue.getText().toString().length() > 0 && 			personalNumberValue.getText().toString().length() > 0 && 			studentCardNumberValue.getText().toString().length() > 0 &&
-			emailValue.getText().toString().length() > 0 &&
-			phoneValue.getText().toString().length() > 0 && 
-			facultyValue.getText().toString().length() > 0 &&
-			cv.getPath().length() > 0 && extraDocument.getPath().length() > 0 );
-	System.out.println(firstNameValue.getText().toString().length() > 0 && 
-			lastNameValue.getText().toString().length() > 0 && 			personalNumberValue.getText().toString().length() > 0 && 			studentCardNumberValue.getText().toString().length() > 0 &&
-			emailValue.getText().toString().length() > 0 &&
-			phoneValue.getText().toString().length() > 0 && 
-			facultyValue.getText().toString().length() > 0 &&
-			cv.getPath().length() > 0 && extraDocument.getPath().length() > 0 );
-	System.out.println(firstNameValue.getText().toString().length() > 0 && 
-			lastNameValue.getText().toString().length() > 0 && 			personalNumberValue.getText().toString().length() > 0 && 			studentCardNumberValue.getText().toString().length() > 0 &&
-			emailValue.getText().toString().length() > 0 &&
-			phoneValue.getText().toString().length() > 0 && 
-			facultyValue.getText().toString().length() > 0 &&
-			cv!=null && extraDocument!=null );
-	
-	System.out.println(firstNameValue.getText().toString().length() > 0 );
-	System.out.println(			lastNameValue.getText().toString().length() > 0 );
-	System.out.println(		personalNumberValue.getText().toString().length() > 0 );
-	System.out.println(			studentCardNumberValue.getText().toString().length() > 0);
-	System.out.println(			emailValue.getText().toString().length() > 0 );
-	System.out.println(			phoneValue.getText().toString().length() > 0   );
-	System.out.println( 			facultyValue.getText().toString().length() > 0  );
-	System.out.println( 			cv!=null );
-	System.out.println(  extraDocument!=null );
-	System.out.println("=------------------------------------------");
+
+	submit.setDisable(!canSubmit);
 	
    
 	
