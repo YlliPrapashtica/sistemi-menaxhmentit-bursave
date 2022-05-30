@@ -1,49 +1,17 @@
 package server;
-import java.awt.BorderLayout;
-import java.awt.Color;
+import config.Config;
+import user.*;
 
-import java.awt.EventQueue;
-import java.awt.Font;
-
-import java.awt.SystemColor;
-import java.awt.Toolkit;
-
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+import java.awt.*;
+import java.io.*;
 import java.net.Inet4Address;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Vector;
-
-import javax.swing.DefaultListModel;
-import javax.swing.ImageIcon;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.SwingConstants;
-import javax.swing.UIManager;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
-import javax.swing.plaf.ColorUIResource;
-import javax.swing.plaf.ScrollBarUI;
-import javax.swing.plaf.basic.BasicScrollBarUI;
-import javax.swing.plaf.metal.MetalScrollBarUI;
-import javax.swing.plaf.multi.MultiScrollBarUI;
-import javax.swing.plaf.synth.SynthScrollBarUI;
-
-import Config.Config;
-import User.User;
-import User.UserRenderer;
-
-import javax.swing.JTextField;
 
 public class Server {
 
@@ -270,7 +238,7 @@ public class Server {
 					this.socket.close();
 				} catch (IOException e1) {
 				}
-				this.stop();
+				//this.stop();
 			}
 		}
 
@@ -315,7 +283,7 @@ public class Server {
 						break;
 					}
 				}
-				this.stop();
+				//this.stop();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -7,5 +7,9 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/Users/Albi/Downloads/jar_files/opencv-3.4.1-1.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Albi/Desktop/Groupchat - Copy/lib/bridj-0.7.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Albi/Desktop/Groupchat - Copy/lib/commons-codec-1.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Albi/Desktop/Groupchat - Copy/lib/slf4j-api-1.7.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Albi/Desktop/Groupchat - Copy/lib/webcam-capture-0.3.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

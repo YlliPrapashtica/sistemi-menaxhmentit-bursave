@@ -1,53 +1,37 @@
 package client;
-import java.awt.EventQueue;
 
-import javax.swing.JFrame;
+import user.User;
+
+import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
 import java.awt.Window.Type;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.Inet4Address;
 import java.net.UnknownHostException;
 
-import javax.swing.JPanel;
-import java.awt.Color;
+//import org.omg.CORBA.Environment;
 
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.LineBorder;
-import javax.xml.parsers.FactoryConfigurationError;
-
-import org.omg.CORBA.Environment;
-
-import client.Client;
-import User.User;
-
-import java.awt.SystemColor;
-import javax.swing.JTextField;
-import javax.swing.JLabel;
-import java.awt.Font;
-import javax.swing.JButton;
-import java.awt.Toolkit;
-import javax.swing.ImageIcon;
-import javax.swing.SwingConstants;
-
-public class Login {
+public class Login<sc> {
 
 	private JFrame frmLogin;
 	private JTextField txtUsername;
 	private JTextField txtIPSV;
 
-	
+
 	public static void main(String[] args) {
 		Login window = new Login();
 		window.frmLogin.setVisible(true);
 	}
 
-	
+
 	public Login() {
 		initialize();
 		frmLogin.setVisible(true);
 	}
 
-	
+
 	private void initialize() {
 		frmLogin = new JFrame();
 		frmLogin.setResizable(false);
@@ -66,7 +50,7 @@ public class Login {
 		frmLogin.getContentPane().add(lblMessage);
 
 		JLabel lbLogo = new JLabel("");
-		lbLogo.setIcon(new ImageIcon(Login.class.getResource("/image/Chat-PNG.png")));
+		lbLogo.setIcon(new ImageIcon(java.util.Objects.requireNonNull(Login.class.getResource("/image/Chat-PNG.png"))));
 		lbLogo.setBounds(23, 39, 50, 50);
 		frmLogin.getContentPane().add(lbLogo);
 
@@ -114,15 +98,16 @@ public class Login {
 		lblIpServer.setBounds(48, 204, 210, 14);
 		frmLogin.getContentPane().add(lblIpServer);
 
-		 txtIPSV = new JTextField();
+		txtIPSV = new JTextField();
 		txtIPSV.setFont(new Font("Segoe UI", Font.PLAIN, 12));
 		txtIPSV.setBackground(SystemColor.info);
 		txtIPSV.setHorizontalAlignment(SwingConstants.CENTER);
 		txtIPSV.setColumns(10);
 		txtIPSV.setBorder(new EmptyBorder(2, 2, 2, 2));
 		txtIPSV.setBounds(48, 220, 210, 30);
-		txtIPSV.setText("169.254.122.139");
+		txtIPSV.setText("192.168.0.226");
 		frmLogin.getContentPane().add(txtIPSV);
 	}
+
 
 }
