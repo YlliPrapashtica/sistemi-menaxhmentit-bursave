@@ -48,6 +48,8 @@ public class MyAccountController {
         try {
             HttpResponse<JsonNode> apiResponse = Unirest.get("http://localhost:8000/api/applicant/627e335f4bc99c47410cf8c4").asJson();
             ApplicantModel applicantModel = new Gson().fromJson(apiResponse.getBody().toString(), ApplicantModel.class);
+            System.out.println(apiResponse.getBody().toString());
+            System.out.println(applicantModel);
             setCurrentInfo(applicantModel);
         } catch (UnirestException e) {
             e.printStackTrace();

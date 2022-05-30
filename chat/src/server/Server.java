@@ -1,6 +1,6 @@
 package server;
-import config.Config;
-import user.*;
+import Config.Config;
+import User.*;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;

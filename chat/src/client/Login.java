@@ -1,9 +1,11 @@
 package client;
 
-import user.User;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+
+import User.User;
+
 import java.awt.*;
 import java.awt.Window.Type;
 import java.awt.event.ActionEvent;

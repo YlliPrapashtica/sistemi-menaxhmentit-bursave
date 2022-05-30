@@ -10,6 +10,8 @@
 <?import javafx.scene.text.Text?>
 
 <VBox fx:id="border_pane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="550.0" prefWidth="567.0" stylesheets="@../css/app.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ApplyFormController">
+
+
    <children>
       <HBox alignment="CENTER" VBox.vgrow="NEVER">
          <children>

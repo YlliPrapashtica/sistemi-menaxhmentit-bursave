@@ -1,7 +1,7 @@
 package client;
 
-import user.User;
-import user.UserRenderer;
+import User.User;
+import User.UserRenderer;
 import video.VideoCall;
 
 import javax.swing.*;
@@ -374,7 +374,7 @@ public class Client {
 				try {
 					if (yourAccount != null) {
 						
-						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + config.Config.tokenVoiceCall);
+						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + Config.Config.tokenVoiceCall);
 						voice.Caller caller = new voice.Caller(yourAccount.getName(), yourAccount.getMyIP());
 						caller.setVisibleFrameCall(true);
 						caller.startRecoderAudio(true);
@@ -400,7 +400,7 @@ public class Client {
 					videoCall.startRecorderVideo();
 					videoCall.startPlayerVideo();
 					try {
-						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + config.Config.tokenVideoCall);
+						dout.writeUTF(myAccount.getName() + "-" + yourAccount.getName() + "-" + Config.Config.tokenVideoCall);
 					} catch (IOException e1) {
 
 					}
@@ -440,7 +440,7 @@ public class Client {
 	private class MessageThread extends Thread {
 		public void run() {
 			try {
-				socket = new java.net.Socket(SERVER_IP, config.Config.portTCPMessage);
+				socket = new java.net.Socket(SERVER_IP, Config.Config.portTCPMessage);
 				din = new java.io.DataInputStream(socket.getInputStream());
 				dout = new java.io.DataOutputStream(socket.getOutputStream());
 
@@ -457,9 +457,9 @@ public class Client {
 						String receiverName = arr[1];
 						String message = arr[2];
 
-						if (message.equals(config.Config.tokenVoiceCall)) {
+						if (message.equals(Config.Config.tokenVoiceCall)) {
 							for (int i = 0; i < listModelUser.size(); i++) {
-								user.User user = listModelUser.get(i);
+								User.User user = listModelUser.get(i);
 								if (user.getName().equals(senderName)
 										&& senderName.equals(myAccount.getName()) == false) {
 									voice.Caller caller = new voice.Caller(user.getName(), user.getMyIP());
@@ -468,9 +468,9 @@ public class Client {
 								}
 							}
 
-						} else if (message.equals(config.Config.tokenVideoCall)) {
+						} else if (message.equals(Config.Config.tokenVideoCall)) {
 							for (int i = 0; i < listModelUser.size(); i++) {
-								user.User user = listModelUser.get(i);
+								User.User user = listModelUser.get(i);
 								if (user.getName().equals(senderName)
 										&& senderName.equals(myAccount.getName()) == false) {
 									video.VideoCall videoCall = new video.VideoCall(user.getName(), user.getMyIP());
@@ -538,7 +538,7 @@ public class Client {
 
 		public ObjectThead() {
 			try {
-				this.socket = new Socket(SERVER_IP, config.Config.portTCPObject);
+				this.socket = new Socket(SERVER_IP, Config.Config.portTCPObject);
 			} catch (IOException e) {
 				System.out.println("Object doesn't init successfully");
 			}

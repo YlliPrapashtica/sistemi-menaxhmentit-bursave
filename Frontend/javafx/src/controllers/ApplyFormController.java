@@ -55,11 +55,10 @@ public class ApplyFormController implements Initializable {
 	@FXML
     private  Button submit; 
 	@FXML
-    private VBox content;
+    private  VBox content;
     
     File extraDocument= new File(""), cv = new File("");
 
-    private Desktop desktop = Desktop.getDesktop();
     
     
     @Override
@@ -187,14 +186,7 @@ public class ApplyFormController implements Initializable {
 		}
     }
 
-    private void openFile(File file) {
-        try {
-            desktop.open(file);
-        } catch (IOException ex) {
-           
-        }
-    }
-    
+ 
 @FXML
 public boolean checkFields() {
 boolean canSubmit = false;

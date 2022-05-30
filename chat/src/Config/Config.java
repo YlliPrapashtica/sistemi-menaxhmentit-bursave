@@ -1,4 +1,4 @@
-package config;
+package Config;
 
 public class Config {
 	public static int portTCPMessage = 10001;

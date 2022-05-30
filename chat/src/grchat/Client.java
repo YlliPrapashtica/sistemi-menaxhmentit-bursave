@@ -419,11 +419,11 @@ class Client extends JFrame {
         Client client = new Client();
 
         try {
-            client.clientSocket = new Socket(IP_ADDRESS_STRING, PORT);
-            DataInputStream din = new DataInputStream(client.clientSocket.getInputStream());
+            Client.ClientSocket = new Socket(IP_ADDRESS_STRING, PORT);
+            DataInputStream din = new DataInputStream(Client.ClientSocket.getInputStream());
             String groupName = din.readUTF();
             client.groupName.setText(groupName);
-            DataOutputStream dout = new DataOutputStream(client.clientSocket.getOutputStream());
+            DataOutputStream dout = new DataOutputStream(Client.ClientSocket.getOutputStream());
 
             String request = din.readUTF();
             if (request.startsWith("RequestSecretText")) {

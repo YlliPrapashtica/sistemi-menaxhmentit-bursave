@@ -3,9 +3,9 @@ package video;
 import org.opencv.core.Core;
 import org.opencv.core.Mat;
 import org.opencv.videoio.VideoCapture;
-import voice.PlayRingtone;
-import voice.PlayerAudio;
-import voice.RecorderAudio;
+import Voice.PlayRingtone;
+import Voice.PlayerAudio;
+import Voice.RecorderAudio;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -52,7 +52,7 @@ public class VideoCall extends JFrame {
 
 		public PlayerVideo() {
 			try {
-				din = new DatagramSocket(config.Config.portUDPVideo);
+				din = new DatagramSocket(Config.Config.portUDPVideo);
 			} catch (SocketException e) {
 			}
 		}
@@ -119,7 +119,7 @@ public class VideoCall extends JFrame {
 							byte[] byte_arr = baos.toByteArray();
 
 							DatagramPacket data = new DatagramPacket(byte_arr, byte_arr.length,
-									InetAddress.getByName(yourIP), config.Config.portUDPVideo);
+									InetAddress.getByName(yourIP), Config.Config.portUDPVideo);
 							// System.out.println("Send V#" + i++);
 							dout.send(data);
 						}
@@ -206,7 +206,7 @@ public class VideoCall extends JFrame {
 	public void startPlayerVideo() {
 		playerVideo = new PlayerVideo();
 		playerVideo.start();
-		playerAudio = new PlayerAudio(config.Config.portUDPAudio);
+		playerAudio = new PlayerAudio(Config.Config.portUDPAudio);
 		playerAudio.start();
 
 		btnCall.setVisible(false);
@@ -216,7 +216,7 @@ public class VideoCall extends JFrame {
 	public void startRecorderVideo() {
 		recorderVideo = new RecorderVideo();
 		recorderVideo.start();
-		recorderAudio = new RecorderAudio(yourIP, config.Config.portUDPAudio);
+		recorderAudio = new RecorderAudio(yourIP, Config.Config.portUDPAudio);
 		recorderAudio.start();
 	}
 

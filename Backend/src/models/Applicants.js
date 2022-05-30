@@ -1,7 +1,7 @@
 const conn = require("../config/mongoose");
 const { validateUniversityEmail } = require("../utils/validators");
 const Schema = require("mongoose").Schema;
-
+const path = require("path")
 const applicantSchema = new Schema(
   {
     first_name: {
@@ -76,14 +76,14 @@ const applicantSchema = new Schema(
       type: String,
       required: true,
       get: function (value) {
-        return "/media/" + value;
+    return path.normalize(path.resolve(`./media/${value}`));
       },
     },
     extra_documents: {
       type: String,
       required: true,
       get: function (value) {
-        return "/media/" + value;
+        return path.normalize(path.resolve(`./media/${value}`));
       },
     },
   },

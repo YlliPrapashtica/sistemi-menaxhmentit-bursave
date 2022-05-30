@@ -1,5 +1,5 @@
-package user;
-import client.Client;
+package User;
+import Client.Client;
 
 import javax.swing.*;
 import java.awt.*;

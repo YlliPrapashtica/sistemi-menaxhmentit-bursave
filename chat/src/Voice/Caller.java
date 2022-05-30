@@ -1,4 +1,4 @@
-package voice;
+package Voice;
 
 import javax.swing.*;
 import javax.swing.border.LineBorder;
@@ -161,12 +161,12 @@ public class Caller extends JFrame {
 	public void startRecoderAudio(boolean state) {
 		btnCall.setVisible(false);
 		btnDeny.setLocation(75, 5);
-		r = new RecorderAudio(yourIP, config.Config.portUDPAudio);
+		r = new RecorderAudio(yourIP, Config.Config.portUDPAudio);
 		r.start();
 	}
 
 	public void startPlayerAudio(boolean state) {
-		p = new PlayerAudio(config.Config.portUDPAudio);
+		p = new PlayerAudio(Config.Config.portUDPAudio);
 		p.start();
 		rtc.start();
 	}
