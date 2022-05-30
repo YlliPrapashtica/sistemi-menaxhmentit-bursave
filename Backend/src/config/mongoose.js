@@ -10,6 +10,5 @@ const conn = mongoose.createConnection(
       console.log("Database connected");
     }
   }
-);
-
+); 
 module.exports = conn;

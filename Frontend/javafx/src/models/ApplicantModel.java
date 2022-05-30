@@ -1,45 +1,40 @@
 package models;
 
 import java.time.OffsetDateTime;
-
-import com.google.gson.Gson;
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.exceptions.UnirestException;
+ 
 
 public class ApplicantModel {
     private String id;
-    private String firstName;
-    private String lastName;
-    private String personalNumber;
-    private String studentCardNumber;
+    private String first_name;
+    private String last_name;
+    private String personal_number;
+    private String student_card_number;
     private String email;
     private String phone;
     private String university;
     private String faculty;
     private String scholarship;
     private String cv;
-    private String extraDocuments;
+    private String extra_documents;
     private OffsetDateTime createdAt;
     private OffsetDateTime updatedAt; 
     private String fullname; 
- 
+   
     
     public String getID() { return id; }
     public void setID(String value) { this.id = value; }
 
-    public String getFirstName() { return firstName; }
-    public void setFirstName(String value) { this.firstName = value; }
+    public String getFirstName() { return first_name; }
+    public void setFirstName(String value) { this.first_name = value; }
 
-    public String getLastName() { return lastName; }
-    public void setLastName(String value) { this.lastName = value; }
+    public String getLastName() { return last_name; }
+    public void setLastName(String value) { this.last_name = value; }
 
-    public String getPersonalNumber() { return personalNumber; }
-    public void setPersonalNumber(String value) { this.personalNumber = value; }
+    public String getPersonalNumber() { return personal_number; }
+    public void setPersonalNumber(String value) { this.personal_number = value; }
 
-    public String getStudentCardNumber() { return studentCardNumber; }
-    public void setStudentCardNumber(String value) { this.studentCardNumber = value; }
+    public String getStudentCardNumber() { return student_card_number; }
+    public void setStudentCardNumber(String value) { this.student_card_number = value; }
 
     public String getEmail() { return email; }
     public void setEmail(String value) { this.email = value; }
@@ -59,8 +54,8 @@ public class ApplicantModel {
     public String getCv() { return cv; }
     public void setCv(String value) { this.cv = value; }
 
-    public String getExtraDocuments() { return extraDocuments; }
-    public void setExtraDocuments(String value) { this.extraDocuments = value; }
+    public String getExtraDocuments() { return extra_documents; }
+    public void setExtraDocuments(String value) { this.extra_documents = value; }
 
     public OffsetDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(OffsetDateTime value) { this.createdAt = value; }

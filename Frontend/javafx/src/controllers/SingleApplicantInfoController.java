@@ -17,7 +17,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import models.ApplicantModel;
 
-public class MyAccountController {
+public class SingleApplicantInfoController {
 	@FXML
     private  Text firstNameValue;
 	@FXML
@@ -43,10 +43,20 @@ public class MyAccountController {
 	@FXML
     private VBox content;
 	
+	public String id;
+	
+	public SingleApplicantInfoController (String id) {
+	this.id = id;	
+System.out.println("asdasd");
+	}
+	
 	@FXML
     public void initialize(){  
     	 try { 
-             HttpResponse<JsonNode> apiResponse = Unirest.get("http://localhost:8000/api/applicant/627e335f4bc99c47410cf8c4").asJson(); 
+             HttpResponse<JsonNode> apiResponse = Unirest.get("http://localhost:8000/api/applicant/"+this.id).asJson(); 
+
+System.out.println("http://localhost:8000/api/applicant/"+this.id);
+System.out.println(apiResponse.getBody().toString());
              ApplicantModel applicantModel = new Gson().fromJson(apiResponse.getBody().toString(), ApplicantModel.class); 
              setCurrentInfo(applicantModel);
          } 

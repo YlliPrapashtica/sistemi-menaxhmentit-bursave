@@ -4,7 +4,7 @@ const { default: mongoose } = require("mongoose");
 
 const listApplications = async (req, res) => {
   try {
-    const app = await Applicant.findOne();
+    const app = await Applicant.find();
 
     res.status(200).json(app);
   } catch (err) {

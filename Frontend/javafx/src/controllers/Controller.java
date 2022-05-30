@@ -20,9 +20,10 @@ public class Controller implements Initializable {
     }
 
 
-    public void show_ViewAllApplicants(javafx.scene.input.MouseEvent event) throws IOException {
-        Parent ViewAllApplicants = FXMLLoader.load(getClass().getResource("/views/ViewAllApplicants.fxml"));
-        border_pane.setCenter(ViewAllApplicants);
+    public void show_ViewAllApplicants(javafx.scene.input.MouseEvent event) throws IOException   {
+        Parent ViewAllApplicants  = FXMLLoader.load(getClass().getResource("/views/ViewAllApplicants.fxml"));
+	        border_pane.setCenter(ViewAllApplicants);
+		 
 
     }
 

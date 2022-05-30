@@ -29,12 +29,12 @@
             </HBox>
          </children>
       </HBox>
-      <VBox alignment="TOP_CENTER" styleClass="back-white" VBox.vgrow="NEVER">
+      <VBox fx:id="content" alignment="TOP_CENTER" styleClass="back-white" VBox.vgrow="NEVER">
          <children>
             <HBox maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="First name" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="firstNameValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -50,7 +50,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Last name" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="lastNameValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -66,7 +66,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Personal number" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="personalNumberValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -82,7 +82,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Student card number" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="studentCardNumberValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -98,7 +98,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="E-mail address" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text fx:id="emailValue"  layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="emailValue"  layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -114,7 +114,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="phoneValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -130,7 +130,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="University" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="universityValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -146,7 +146,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Faculty" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="facultyValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -162,7 +162,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Scholarship" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="scholarshipValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -178,7 +178,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CV" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="cvValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -194,7 +194,7 @@
             <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="517.0" VBox.vgrow="NEVER">
                <children>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Extra documents" wrappingWidth="200.0" HBox.hgrow="NEVER" />
-                  <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
+                  <Text fx:id="extraDocumentsValue" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." HBox.hgrow="NEVER" />
                </children>
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
